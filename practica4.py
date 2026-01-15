@@ -20,7 +20,7 @@ for num in lista:
         if num == c:
             ya_contado = True
 
-    if ya_contado == False:
+    if not ya_contado:
         contados.append(num)
         contador = 0
 
@@ -32,6 +32,8 @@ for num in lista:
             pares.append(num)
             print(f"{num} se repite {contador} veces")
 
+contados = []
+
 print("\nNÚMEROS IMPARES REPETIDOS:")
 for num in lista:
     ya_contado = False
@@ -40,7 +42,7 @@ for num in lista:
         if num == c:
             ya_contado = True
 
-    if ya_contado == False:
+    if not ya_contado:
         contados.append(num)
         contador = 0
 
